@@ -1,0 +1,195 @@
+/*
+**
+** Tritanium Guestbook - Standardstyle
+** http://www.tritanium-scripts.com
+**
+*/
+
+
+
+/* <body>-Eigenschaften */
+body {
+	background-color:white;
+}
+
+/* Der Text, der über dem Gästebuch engezeigt werden soll (falls in der settings.php angegeben) */
+.tgbbannertext {
+	color:black;
+	font-family:verdana;
+	font-weight:bold;
+	text-align:center;
+	font-size:30pt;
+}
+
+/* "Eintragen"-Text */
+.tgbnewentrytext {
+	font-family:verdana;
+	color:black;
+	font-size:10pt;
+}
+a.tgbnewentrytext:link {
+	color:blue;
+	text-decoration:none;
+}
+a.tgbnewentrytext:visited {
+	color:blue;
+	text-decoration:none;
+}
+a.tgbnewentrytext:hover {
+	color:blue;
+	text-decoration:underline;
+}
+a.tgbnewentrytext:active {
+	color:blue;
+	text-decoration:underline;
+}
+
+/* Allgemein die Tabelle eines Eintrags */
+table.tgbtable {
+
+}
+
+/* Die linke Zelle der Tabelle eines Eintrags */
+td.tgbleftcell {
+	background-color:#F5F5F5;
+	text-align:left;
+	border:1px black solid;
+}
+
+/* Name dessen, der sich eingetragen hat */
+.tgbleftcellnametext {
+	font-family:verdana;
+	font-weight:bold;
+	font-size:10pt;
+}
+
+/* Die restlichen Angaben der Person, die sich eingetragen hat */
+.tgbleftcellothertext {
+	font-family:verdana;
+	font-size:10px;
+}
+
+/* Die rechte Zelle der Tabelle eines Eintrages */
+td.tgbrightcell {
+	background-color:white;
+	text-align:left;
+}
+
+/* Der Text in der rechten Zelle, also der eigentliche Eintrag */
+.tgbrightcelltext {
+	font-size:10pt;
+	font-family:verdana;
+}
+
+/* Kommentar zu einem Eintrag */
+.tgbcomment {
+	font-family:verdana;
+	font-size:9pt;
+	font-weight:bold;
+	color:black;
+	background-color:#F8F8FF;
+	border:black 1px solid;
+	padding:2px;
+}
+
+/* Das Formular um sich ins Gästebuch einzutragen */
+
+table.tgbform { /* Die Tabelle beim Eintragen */
+	background-color:black;
+}
+
+td.tgbformleftcell{ /* Die linken Zellen */
+	background-color:#DCDCDC;
+}
+.tgbformleftcell { /* Der Text in den linken Zellen */
+	text-align:left;
+	font-family:verdana;
+	font-size:10pt;
+}
+
+td.tgbformrightcell{ /* Die rechte Zellen */
+	background-color:#F5F5F5;
+}
+.tgbformrightcell { /* Text in den rechten Zellen (ist eig. keiner da :) */
+	text-align:left;
+}
+
+td.tgberrorcell { /* Die Zelle, in der Fehler angezeigt werden (z.B. kein Name eingegeben) */
+	background-color:#F5F5F5;
+}
+.tgberrorcell { /* Text in der Fehlerzelle */
+	text-align:left;
+	color:red;
+	font-family:verdana;
+	font-weight:bold;
+	font-size:10pt;
+}
+
+textarea.tgbform { /* Die große TextBox, wo der eigentliche Eintrag rein kommt */
+	border:black 1px solid;
+	font-family:arial;
+	font-size:10pt;
+}
+input.tgbform { /* Die kleinen Textfelder */
+	border:black 1px solid;
+	font-family:arial;
+	font-size:10pt;
+}
+button.tgbform { /* Der Eintragen-Button */
+	background-color:white;
+	font-family:arial;
+	font-size:10pt;
+	border:black 1px solid;
+}
+
+/* Die Seitenauswahl */
+.tgbpagechange {
+	font-family:verdana;
+	font-size:10px;
+}
+a.tgbpagechange:link {
+	color:blue;
+	text-decoration:none;
+}
+a.tgbpagechange:visited {
+	color:blue;
+	text-decoration:none;
+}
+a.tgbpagechange:hover {
+	color:blue;
+	text-decoration:underline;
+}
+a.tgbpagechange:active {
+	color:blue;
+	text-decoration:underline;
+}
+
+
+/* 
+** Das Copyright
+** ACHTUNG: Das Copyright muss immer gut erkennbar sein!
+** Man verstößt auch gegen die Lizenz, wenn die Farbe des
+** Textes gleich oder sehr ähnlich der Hintergrundfarbe ist!
+*/
+.tgbcopyr {
+	color:gray;
+	font-family:verdana;
+	font-size:10px;
+	color:black;
+}
+a.tgbcopyr:link {
+	color:gray;
+	text-decoration:underline;
+}
+a.tgbcopyr:visited {
+	color:gray;
+	text-decoration:underline;
+}
+a.tgbcopyr:hover {
+	color:red;
+	text-decoration:underline;
+}
+a.tgbcopyr:active {
+	color:red;
+	text-decoration:underline;
+}
