@@ -1,0 +1,127 @@
+<html>
+<head>
+	<!--
+
+	Tritanium Guestbook - Readme (c) 2002 Tritanium Scripts
+	http://www.tritanium-scripts.com
+
+	-->
+	<title>Tritanium Guestbook - Readme</title>
+	<style>
+		a:visited {
+			color:blue;
+			text-decoration:underline;
+		}
+		a:hover {
+			color:red;
+			text-decoration:underline;
+		}
+	</style>
+</head>
+<body>
+<font face="verdana" size="2" color="black">
+
+<font size="5">Tritanium Guestbook 1.0 Beta<br>Readme</font><br><br>
+<hr width="50%" align="left" color="black">
+1. <a href="#part1">Einführung</a><br>
+2. <a href="#part2">Installation</a><br>
+&nbsp;&nbsp;2.1 <a href="#part2.1">Vorraussetzungen</a><br>
+&nbsp;&nbsp;2.2 <a href="#part2.2">Voreinstellungen</a><br>
+&nbsp;&nbsp;2.3 <a href="#part2.3">Upload</a><br>
+&nbsp;&nbsp;2.4 <a href="#part2.4">Rechte setzen</a><br>
+&nbsp;&nbsp;2.4 <a href="#part2.5">Erste Schritte</a><br>
+3. <a href="#part3">Betahinweise</a><br>
+4. <a href="#part4">History</a><br>
+5. <a href="#part5">Lizenz</a>
+<hr width="50%" align="left" color="black"><br><br><br><br>
+<font size="3"><b><a name="part1">1. Einführung</a></b></font><br>
+Vielen Dank, dass Sie sich für dieses Gästebuch entschieden haben. Ich hoffe, es entspricht Ihren Vorstellungen!<br>
+Bitte beachten Sie, dass dies noch eine Betaversion ist, das heißt, manche Features funktionieren noch nicht oder noch
+nicht richtig/vollständig und auch sonst kann es sein, dass es noch den einen oder anderen Fehler gibt. Weitere
+Informationen dazu erhalten sie unter <a href="#part3">Betahinweise</a>.
+<br><br><br><br>
+
+<font size="3"><b><a name="part2">2. Installation</a></b></font><br><br>
+<b><a name="part2.1">2.1 Vorrausetzungen</a></b><br>
+Dieses Gästebuch stellt keine hohen Anforderungen an ihren Server. Lediglich benötigt werden:<br>
+- PHP 4 (Das Gästebuch wurde unter PHP 4.2.0 entwickelt, es sollte aber auch unter früheren Versionen laufen)<br>
+- ca. 0,5-1 MB Webspace (aber auch mehr bzw. weniger, je nach Anzahl/Länge der Einträge)<br>
+<br>
+<b><a name="part2.2">2.2 Voreinstellungen</a></b><br>
+Bevor sie mit dem Upload beginnen, sollten Sie die Datei &quot;settings.php&quot; mit einem beliebigen Texteditor
+öffnen und die einzelnen Punkte auf ihre Angaben abändern. Was die einzelnen Dinge bewirken, steht jeweils in der
+Zeile darüber. Sind Sie damit fertig, können Sie mit dem Upload beginnen. Es ist übrigens nicht unbedingt notwendig,
+jetzt schon alle Einstellungen vorzunehmen. Sie können dies später jederzeit nachholen, müssen dann aber die Datei
+&quot;settings.php&quot; neu hochladen und die alte überschreiben.<br>
+<br>
+<b><a name="part2.3">2.3 Upload</a></b><br>
+Nachdem Sie alle Einstellungen vorgenommen haben, beginnen Sie mit dem Upload per FTP auf ihren Server. Beachten Sie,
+dass es zwei Übertragungsmodi (Binary und Ascii) gibt. Normalerweise sollte ihr FTP-Programm jeweils selber den
+richtigen Modus wählen, aber falls Zweifel bestehen, können Sie diesen jeweils auch manuell wählen (wie das bei ihrem
+FTP-Programm genau geht, sollte in dessen Anleitung stehen):<br>
+Verzeichnis &quot;<b>data</b>&quot; (+ Inhalt) <b>Binarymodus</b><br>
+Verzeichnis &quot;<b>images</b>&quot; (+ Inhalt) <b>Binarymodus</b><br>
+Verzeichnis &quot;<b>styles</b>&quot; (+ Inhalt) <b>Asciimodus</b><br>
+Dateien <b>*.php Asciimodus</b><br>
+<br>
+<b><a name="part2.4">2.4 Rechte setzen</a></b><br>
+Sind alle Verzeichnisse und Dateien hochgeladen, müssen Sie noch spezielle Rechte verteilen. Diese Option sollten
+Sie in ihrem FTP-Programm unter dem Punkt &quot;CHMOD&quot; finden. Erteilen Sie folgenden Dateien/Ordnern folgende
+Rechte:<br>
+Verzeichnis &quot;<b>data</b>&quot; <b>777</b><br>
+Dateien <b>*.dat</b> (in &quot;data&quot;) <b>777</b><br>
+Dateien <b>*.php 755</b><br>
+<br>
+<b><a name="part2.5">2.5 Erste Schritte</a></b><br>
+Ihr Gästebuch sollte nun korrekt installiert sein. Sie können es nun in Ihrem Webbrowser per index.php aufrufen (z.B.
+http://www.meinedomain.de/gb/index.php). Die Administration dagegen erreichen Sie über admin.php (z.B.
+http://www.meinedomain.de/gb/admin.php). Öffnen Sie auch genau diese und loggen Sie sich mit dem Zugangscode
+&quot;<b>ReiAyanami</b>&quot; (ohne Anführungszeichen) ein. Beachten sie Groß- und Kleinschreibung! Nun sollten Sie
+als erstes links in der Navigation der Administration den Punkt &quot;Zugangscode ändern&quot; auswählen. Dort geben
+Sie als aktuellen Zugangscode wieder &quot;ReiAyanami&quot; ein. Als neuen Zugangscode sollten Sie möglichst
+eine wirre Kombination aus Zahlen, Buchstaben und anderen Zeichen wählen, damit es unbefugten Personen möglichst
+schwer (vielleicht sogar fast unmöglich) gemacht wird, auf diesem Wege das Gästebuch zu manipulieren. Haben Sie dies
+getan, steht Ihnen nun ein sehr komfortables und umfangreiches Gästebuch für Ihre Homepage zur Verfügung! :)
+<br><br><br><br>
+
+
+<font size="3"><b><a name="part3">3. Betahinweise</a></b></font><br>
+Diese Version des Gästebuchs ist eine Betaversion, d.h. es befindet sich höchstwahrscheinlich noch der eine oder andere
+Fehler im Script und einige Features funktionieren auch noch nicht oder noch nicht vollständig. Im Speziellen gehören
+hier folgende Dinge dazu: ICQ, AIM, Y! und die Emailbenachrichtigungen. Für die ersten 3 Punkte gilt: Die Daten kann man
+zwar beim Eintragen angeben und sie werden auch gespeichert, allerdings werden sie später im Gästebuch noch nicht
+angezeigt. Für die Emailbenachrichtigungen gilt: Diese Funktionen sind komplett integriert, allerdings noch nicht getestet.
+Ich kann also nicht garantieren, dass die Emails vom Script her auch ankommen (theoretisch sollte es schon so sein, aber
+man weiß ja nie...). Falls Ihnen hierbei etwas auffällt, können Sie mir das oder auch andere Fehler, Verbesserungsvorschläge usw.
+gerne per <a href="mailto:Julian%20Backes%20&lt;julian@tritanium-scripts.com&gt;?subject=TGB%201.0%20Beta">Mail</a>
+mitteilen oder es einfach in das <a target="_blank" href="http://www.tritanium-scripts.com/forum">Forum</a> auf meiner
+Homepage schreiben.
+<br><br><br><br>
+
+
+<font size="3"><b><a name="part4">4. History</a></b></font><br><br>
+<b>16.07.2002: Version 1.0 Beta</b><br>
+&nbsp;&nbsp;- Erstes Release (aber schon viele Features :)
+<br><br><br><br>
+
+
+<font size="3"><b><a name="part5">5. Lizenz</a></b></font><br>
+1: Durch das Verwenden dieser Software (Tritanium Guestbook, im Folgenden TGB) akzeptieren sie das Lizenzabkommen/erlären sich damit einverstanden.<br>
+2: Diese Lizenz ermöglicht es ihnen TGB auf beliebig vielen Servern zu installieren und zu verwenden, der Verwendungszweck darf einen kommerziellen Hintergrund haben.<br>
+3: Sie dürfen TGB für ihren eigenen Zweck beliebig verändern bzw. Dritte dazu beauftragen, allerdings dürfen sie es verändert weder weitergeben noch verkaufen.<br>
+4: Alle Copyrighthinweise (&quot;&copy; 2002 Tritanium Scripts&quot;, &quot;Tritanium Guestbook 1.0 Beta&quot;) und die dazugehörigen Links sowohl im Quellcode, als auch in den von TGB erstellen Seiten dürfen unter keinen Umständen verändert/gelöscht werden und müssen für den Benutzer unverändert und immer gut sichtbar zu sehen sein.<br>
+5: Tritanium Scripts gibt keine Funktionsgarantie auf TGB mit der verwendeten Hardware/Software.<br>
+6: Tritanium Scripts ist für keinerlei Inhalte bzw. Verfasser verantwortlich, die mit TGB erstellt wurden/werden.<br>
+7: Das Risiko diese Software zu verwenden liegt alleine beim Lizenznehmer. Der Rechtsweg ist ausgeschlossen.<br>
+8: Ohne Genehmigung von Tritanium Scripts dürfen weder ganze Scripte noch Scriptteile, die Bestandteil von TGB sind, in anderen Scripten verwendet werden.<br>
+9: TGB darf ohne Genehmigung von Tritanium Scripts nicht zum Download angeboten werden.<br>
+10: Falls eine Genehmigung zum Download vorliegt, darf das Archiv nur unverändert verbreitet werden, falls nicht anders mit Tritanium Scripts vereinbart.<br>
+11: TGB darf nur mit Genehmigung von Tritanium Scripts auf politischen Seiten verwendet werden.
+<br><br><br><br>
+
+
+&copy; 2002 Tritanium Scripts<br>
+<a target="_blank" href="http://www.tritanium-scripts.com">http://www.tritanium-scripts.com</a>
+</font>
+</body>
+</html>
